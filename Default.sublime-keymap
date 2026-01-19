@@ -1,0 +1,6 @@
+// MacOS       Win
+// command --> alt
+
+[
+    { "keys": ["super+shift+d"], "command": "conv_calculate"},
+]
