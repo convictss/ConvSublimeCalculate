@@ -1,0 +1,46 @@
+HELP.md
+target/
+out/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+__pycache__
+.DS_Store
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
+
+### Others ###
+single*.py
+/src/single*.py
+
+# 忽略所有 .csv 文件
+*.csv
+
+# 但是保留 data 文件夹内的 .csv 文件
+!data/*.csv
+
+*.egg-info
