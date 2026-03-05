@@ -5,11 +5,11 @@
 > A simple calculator that supports addition, subtraction, multiplication and division, and supports high-precision calculation (based on Decimal calculation, not float)
 
 # 使用方法：
-1. 输入算式后，按 command+shift+d，计算结果将自动追加到算式后面
-2. 选中需要计算的算式后，按 command+shift+d，计算结果将自动追加到算式后面
+1. 输入算式后，按 super+shift+c，计算结果将自动追加到算式后面
+2. 选中需要计算的算式后，按 super+shift+c，计算结果将自动追加到算式后面
 > # usage:
-> 1. After entering the formula, press command+shift+d, and the calculation result will be automatically appended to the end of the formula
-> 2. After selecting the formula to be calculated, press command+shift+d, and the calculation result will be automatically appended to the end of the formula
+> 1. After entering the formula, press super+shift+c, and the calculation result will be automatically appended to the end of the formula
+> 2. After selecting the formula to be calculated, press super+shift+c, and the calculation result will be automatically appended to the end of the formula
 
 
 

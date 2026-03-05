@@ -2,5 +2,5 @@
 // command --> alt
 
 [
-    { "keys": ["super+shift+d"], "command": "conv_calculate"},
+    { "keys": ["super+shift+c"], "command": "conv_calculate"},
 ]
