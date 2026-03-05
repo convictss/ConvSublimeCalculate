@@ -1,1 +1,15 @@
-# conv calculate
+# Conv 计算器
+> Conv calculator
+
+# 一个简单的计算器，支持加减乘除，支持高精度计算（基于 Decimal 计算，而不是 float）
+> A simple calculator that supports addition, subtraction, multiplication and division, and supports high-precision calculation (based on Decimal calculation, not float)
+
+# 使用方法：
+1. 输入算式后，按 command+shift+d，计算结果将自动追加到算式后面
+2. 选中需要计算的算式后，按 command+shift+d，计算结果将自动追加到算式后面
+> # usage:
+> 1. After entering the formula, press command+shift+d, and the calculation result will be automatically appended to the end of the formula
+> 2. After selecting the formula to be calculated, press command+shift+d, and the calculation result will be automatically appended to the end of the formula
+
+
+
