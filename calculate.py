@@ -10,7 +10,7 @@ import json
 import sys
 from decimal import Decimal
 
-print('Current python version: {}'.format(sys.version))  # 4200 --> python3.3.7
+# print('Current python version: {}'.format(sys.version))  # 4200 --> python3.3.7
 # print('控制台显示消息')
 # sublime.status_message('底部状态栏显示消息，可以作为提示用')
 # sublime.error_message('弹窗消息，控制台也会显示消息')
@@ -38,7 +38,7 @@ class ConvCalculateCommand(sublime_plugin.TextCommand):
 
             # 使用否定字符类，剔除【数字、加减乘除、括号、小数点、空格】之外的字符
             clean_expr = re.sub(r'[^\d+\-*/().\s]', '', expr).strip()
-            print('clean_expr: {}'.format(clean_expr))
+            # print('clean_expr: {}'.format(clean_expr))
             if not clean_expr:
                 view.show_popup('Invalid expression')
                 continue
@@ -48,7 +48,7 @@ class ConvCalculateCommand(sublime_plugin.TextCommand):
                 # 将所有数字替换为 Decimal('...') 形式
                 # 例如: "1.001 + 0.9" → "Decimal('1.001') + Decimal('0.9')"
                 expr_with_decimal = re.sub(r'\b(\d+\.?\d*)\b',r"Decimal('\1')", clean_expr)
-                print('expr_with_decimal: {}'.format(expr_with_decimal))
+                # print('expr_with_decimal: {}'.format(expr_with_decimal))
 
                 # 安全执行：只允许 Decimal 和基本运算
                 result = eval(
@@ -67,5 +67,5 @@ class ConvCalculateCommand(sublime_plugin.TextCommand):
             # 捕获计算过程中可能出现的任何异常（如语法错误、除零等）
             except Exception as e:
                 sublime.status_message('异常，看控制台更详细信息: {}'.format(e))
-                print('ConvCalculate error: {}'.format(e))
+                # print('ConvCalculate error: {}'.format(e))
 
