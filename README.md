@@ -28,5 +28,3 @@ Linux:
 
 { "keys": ["alt+shift+c"], "command": "conv_calculate" },
 
-> Tip
-> 
