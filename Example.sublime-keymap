@@ -1,0 +1,7 @@
+// MacOS               Win      Linux
+// command(super) -->  alt -->  alt
+
+[
+    // Copy this to your keybinding file to enable the shortcut.
+    // { "keys": ["super+shift+c"], "command": "conv_calculate"},
+]
