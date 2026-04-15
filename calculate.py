@@ -56,16 +56,16 @@ class ConvCalculateCommand(sublime_plugin.TextCommand):
                     {"__builtins__": {}},  # 将其设为 {}（空字典），禁止执行 __import__('os')、open('/etc/passwd') 等危险操作
                     {"Decimal": Decimal}  # 告诉 eval 可以使用 Decimal 这个名字，它指向我们导入的 decimal.Decimal 类
                 )
-
-                # 转换为字符串（Decimal 会自动去除多余零）
+                # 去除小数末尾的0
+                result = result.normalize()
                 result_str = str(result)
 
                 # 插入结果
                 insert_point = region.end()
-                view.insert(edit, insert_point, " = {}".format(result_str))
+                view.insert(edit, insert_point, f' = {result_str}')
 
             # 捕获计算过程中可能出现的任何异常（如语法错误、除零等）
             except Exception as e:
-                sublime.status_message('异常，看控制台更详细信息: {}'.format(e))
-                # print('ConvCalculate error: {}'.format(e))
+                sublime.status_message(f'异常，看控制台更详细信息: {e}')
+                # print(f'ConvCalculate error: {e}')
 
